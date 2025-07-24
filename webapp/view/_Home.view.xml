@@ -1,0 +1,50 @@
+<mvc:View controllerName="com.sap.demo.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    
+    <!--<Page id="page" title="{i18n>title}">
+        <content>
+            <OverflowToolbar id="otb2" class="sapUiSmallMargin">
+                <SearchField id="searchfield" placeholder="Search by {oData>/searchtxt}" 
+                             width="25%" liveChange=".onSearch" value="{oData>/searchValue}" />
+                
+                <Select id="select" change="onSelect">
+					<core:Item id="item1" key="1" text="ID" />
+                    <core:Item id="item2" key="2" text="Name" />
+                    <core:Item id="item3" key="3" text="Description" />
+				</Select>
+
+                <ToolbarSpacer id="_IDGenToolbarSpacer"/>
+
+                <Button id="_IDGenButton" type="Default" icon="sap-icon://sort" text="Sort" press="onSort"/>
+                <Button id="_IDGenButton2" type="Emphasized" icon="sap-icon://product" text="Add Product" press="onNewProduct"/>
+            </OverflowToolbar>
+            
+            <VBox id="_IDGenVBox" class="sapUiSmallMargin">
+                <List
+                    id="IDList1"
+                    items="{/Products}"
+                    headerText="Products">
+                    <CustomListItem id="_IDGenCustomListItem">
+                        <VBox id="_IDGenVBox2" class="sapUiSmallMargin">
+                            <HBox id="_IDGenHBox" justifyContent="SpaceBetween">
+                                <Text id="_IDGenText" text="Product ID: {ID}" />
+                                <Text id="_IDGenText1" class="font" text="${ path: 'Price', formatter: '.formatter.removeZeros' } USD" />
+                            </HBox>
+
+                            <Text id="_IDGenText2" text="{Name}" />
+                            <Text id="_IDGenText3" text="{Description}" />
+
+                            <RatingIndicator id="_IDGenRatingIndicator"
+                                value="{Rating}"
+                                maxValue="5"
+                                iconSize="1.5rem"
+                                visualMode="Half"
+                                enabled="false" />
+                        </VBox>
+                    </CustomListItem>
+                </List>
+            </VBox>
+
+        </content>
+    </Page> -->
+</mvc:View>

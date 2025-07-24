@@ -1,0 +1,53 @@
+<mvc:View controllerName="com.sap.demo.controller.Edit"
+    xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" >
+    
+    <Page id="Editproducts" title="Products" showNavButton="true" navButtonPress="onNavBack">
+        <content>
+            <VBox id="_IDGenVBox2" class="sapUiSmallMargin">
+                <f:SimpleForm id="SimpleFormChange355"
+                    editable="false"
+                    layout="ResponsiveGridLayout"
+                    title="Edit Product {oData>/id}"
+                    labelSpanXL="3"
+                    labelSpanL="3"
+                    labelSpanM="3"
+                    labelSpanS="12"
+                    adjustLabelSpan="false"
+                    emptySpanXL="4"
+                    emptySpanL="4"
+                    emptySpanM="4"
+                    emptySpanS="0"
+                    columnsXL="1"
+                    columnsL="1"
+                    columnsM="1"
+                    singleContainerFullSize="false" >
+                    <f:content>
+                        <Label id="_IDGenLabel4" text="Name"/>
+                        <Input id="_IDGenInput" value="{oData>/name}" />
+                        <Label id="_IDGenLabel5" text="Description" />
+                        <Input id="_IDGenInput1" value="{oData>/description}" />
+                        <Label id="_IDGenLabel6" text="Price" />
+                        <Input id="_IDGenInput2" value="{oData>/price}" type="Number" />
+                        <Label id="_IDGenLabel7" text="Rating" />
+                        <RatingIndicator id="_IDGenRatingIndicator2"
+                                value="{oData>/rating}"
+                                maxValue="5"
+                                iconSize="1.5rem"
+                                visualMode="Half"
+                                enabled="true" />
+                    </f:content>
+                </f:SimpleForm>
+            </VBox>
+        </content>
+
+         <footer>
+            <Bar id="_IDGenBar2">
+                <contentRight>
+                    <Button id="_IDGenButton4" text="Cancel" press="onNavBack" type="Default" />
+                    <Button id="_IDGenButton5" text="Edit" press=".onEditPress" type="Emphasized" />
+                </contentRight>
+            </Bar>
+        </footer>
+
+    </Page>
+</mvc:View>
