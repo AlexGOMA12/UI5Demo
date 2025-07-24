@@ -2,11 +2,8 @@ sap.ui.define([
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
     "com/sap/demo/utils/formatter",
-    "sap/ui/model/Filter",
-    "sap/ui/model/FilterOperator",
-    "sap/ui/model/Sorter",
     "sap/m/MessageToast"
-], (Controller, JSONModel, formatter, Filter, FilterOperator, Sorter, MessageToast) => {
+], (Controller, JSONModel, formatter, MessageToast) => {
     "use strict";
 
     return Controller.extend("com.sap.demo.controller.Products", {
